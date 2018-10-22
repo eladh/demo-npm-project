@@ -29,15 +29,10 @@ node {
 
                 sh 'node -v'
                 sh 'npm prune'
-                sh 'npm install'
-                sh 'npm test'
-
-               step([$class: 'JUnitResultArchiver', testResults: 'test-results.xml'])
               }
 
               stage('Build') {
-                  sh 'gulp webpack'
-                  archiveArtifacts artifacts: '*.tar.gz', fingerprint: true
+                  sh 'npm i'
 
               }
 
