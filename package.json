@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eladh/demo-npm-project/issues"
   },
-  "homepage": "https://github.com/eladh/demo-npm-project#readme"
+  "homepage": "https://github.com/eladh/demo-npm-project#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
